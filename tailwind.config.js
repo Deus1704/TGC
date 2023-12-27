@@ -1,0 +1,65 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        black: {
+          900: "#000000",
+          "900_7f": "#0000007f",
+          "900_3f": "#0000003f",
+          "900_66": "#00000066",
+        },
+        gray: {
+          50: "#f7f7f9",
+          100: "#f2f2f2",
+          200: "#efefef",
+          300: "#dfe1e6",
+          400: "#c2c2c2",
+          500: "#a0a0a0",
+          600: "#707070",
+          900: "#222325",
+          "50_01": "#fafafa",
+          "50_02": "#f4f7fe",
+          "900_02": "#262626",
+          "900_03": "#292929",
+          "600_01": "#6f727a",
+          "900_00": "#29292900",
+          "900_01": "#232325",
+          "300_01": "#e0e0e0",
+          "900_7f": "#2323257f",
+        },
+        light_green: { A400: "#83ea00" },
+        blue: { A700: "#2d64f3", A700_0c: "#2d64f30c" },
+        blue_gray: {
+          100: "#d9d9d9",
+          700: "#455a64",
+          900: "#263238",
+          "100_01": "#cecece",
+        },
+        red: {
+          400: "#e8505b",
+          A200: "#ff5454",
+          A100: "#ff7f7f",
+          A100_33: "#ff7f7f33",
+        },
+        green: { A200: "#7ae2aa", A200_33: "#7ae2aa33" },
+        white: { A700: "#ffffff" },
+      },
+      fontFamily: { lato: "Lato", quicksand: "Quicksand", inter: "Inter" },
+      boxShadow: {
+        bs1: "0px 4px  4px 0px #0000003f",
+        bs: "0px 8px  16px 0px #0000003f",
+      },
+      backgroundImage: {
+        gradient: "linear-gradient(180deg ,#292929,#29292900)",
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
