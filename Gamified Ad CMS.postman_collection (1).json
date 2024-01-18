@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "2915e145-8b21-4837-9eb0-d4fb02631227",
+		"name": "Gamified Ad CMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29130458"
+	},
+	"item": [
+		{
+			"name": "Signup API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_email\":\"shubhamk@tgc.com\",\r\n    \"user_first_name\":\"ShubhamK\",\r\n    \"user_last_name\":\"D\",\r\n    \"user_phone_number\":919087675,\r\n    \"user_organization_name\":\"TGC\",\r\n    \"user_organization_password\":\"Tgc@12345\",\r\n    \"user_status\":\"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.connectopia.app:8888/signup",
+					"protocol": "https",
+					"host": [
+						"www",
+						"connectopia",
+						"app"
+					],
+					"port": "8888",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user_email\": \"shubham@tgc.com\",\r\n  \"user_organization_password\": \"Tgc@1234\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.connectopia.app:8888/login",
+					"protocol": "https",
+					"host": [
+						"www",
+						"connectopia",
+						"app"
+					],
+					"port": "8888",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
