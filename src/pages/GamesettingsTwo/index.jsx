@@ -58,12 +58,6 @@ const GamesettingsTwoPage = () => {
               >
                 Choose an appropriate ad banner size for your campaign.
               </Text>
-              <Text
-                className="absolute h-full inset-[0] justify-center m-auto text-3xl sm:text-[26px] md:text-[28px] text-black-900 w-max"
-                size="txtLatoSemiBold30"
-              >
-                Choose an appropriate ad banner size for your campaign.
-              </Text>
             </div>
             <div className="flex md:flex-col flex-row font-lato gap-[31px] items-center justify-between ml-0.5 md:ml-[0] mt-[22px] w-full">
               <div className="bg-blue-A700_0c flex md:flex-1 flex-col items-start justify-start p-[17px] rounded-[20px] w-[65%] md:w-full">

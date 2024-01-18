@@ -1,0 +1,39 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+  }
+  
+  .photo-container {
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    position: sticky;
+    width: 85vw; /* adjust this as needed */
+    height: 35vh; /* adjust this as needed */
+  }
+  
+  .photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* this will ensure that your images cover the whole area of the container without distorting their aspect ratios */
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .active {
+    transform: scale(1.2);
+  }
+  

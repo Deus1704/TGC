@@ -1,0 +1,21 @@
+.card {
+    border-radius: 10px; /* rounded corners */
+    overflow: hidden; /* to apply the border radius to the image */
+    box-shadow: 0 0 10px rgba(51, 48, 48, 0.269); /* optional: add a shadow for a "card" effect */
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card h2 {
+    /* styles for the campaign name */
+    align-items: center;
+  }
+  
+  .card button {
+    /* styles for the buttons */
+    color: #2E65F3;
+  }
